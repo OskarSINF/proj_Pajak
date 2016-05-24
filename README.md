@@ -1,3 +1,5 @@
+
+#Oskar Szubert
 #Symulator Pająka:
 
 ###
