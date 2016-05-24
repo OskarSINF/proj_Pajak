@@ -13,10 +13,10 @@
 
 
 ###Dodatkowe informacje:
-	- Symulator będzie turówką, pająk posiada punkty akcji.
-	- Decyzja na co zostaną rozdzielone PA, zapadac będzie w oparciu o wartości: zdrowie(mało hp idź zjedz muche), stan pajęczyny(sieć się zarwie- idź ją napraw) - obliczane wg odpowiedniego algorytmu. 
-	- Złapane owady, jeżeli nie zostaną wykorzystane w przeciągu 1-3 tur odpadają z pajęczyny i przepadają.
-	- Pająk,  który nie jadł przez 2 (?) Tury ginie.
-	- Sieć może być niszczona: w czasie walki, w każdej turze od warunków zewnętrznych np deszcz, wiatr.
-	- Nie naprawiana sieć ulega zniszczeniu.
-	- W czasie walki i małej ilości hp pająk może uciec z pajęczyny i założyć nowa.
+- Symulator będzie turówką, pająk posiada punkty akcji.
+- Decyzja na co zostaną rozdzielone PA, zapadac będzie w oparciu o wartości: zdrowie(mało hp idź zjedz muche), stan pajęczyny(sieć się zarwie- idź ją napraw) - obliczane wg odpowiedniego algorytmu. 
+- Złapane owady, jeżeli nie zostaną wykorzystane w przeciągu 1-3 tur odpadają z pajęczyny i przepadają.
+- Pająk,  który nie jadł przez 2 (?) Tury ginie.
+- Sieć może być niszczona: w czasie walki, w każdej turze od warunków zewnętrznych np deszcz, wiatr.
+- Nie naprawiana sieć ulega zniszczeniu.
+- W czasie walki i małej ilości hp pająk może uciec z pajęczyny i założyć nowa.
