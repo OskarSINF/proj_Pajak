@@ -1,11 +1,9 @@
 class Fly
 {
-	int size,remain;
+	int size;;
 public:
-	friend class Spider;
+	int remain;
+	
 	Fly();
-	void setRemain(int r);
-	int getRemain(){return remain;}
-
 	int getSize(){return size;}
 };

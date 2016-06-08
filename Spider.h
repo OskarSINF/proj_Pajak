@@ -4,22 +4,30 @@ using namespace std;
 class Spider
 {
 	string name;
-	int hp,hpMAX,size;
+	int hp,hpMAX,size,ap;
+	vector<string> names;
 
 	public:
 
-	int ap;
 	Spider(string N);	
-	Spider(string N,int H,int S); 	
+	Spider(int H,int S); 
+
+	~Spider();
+
 	int getHP(){return hp;}
 	int getSize(){return size;}
+	string getName(){return name;}
+	int getAP(){return ap;}
 
 	void eat(int flySize);
-	int hpIndicator();
 	void regeneration();
-	void description();
-	void buildWeb(int dura);
+	int hpIndicator();
 
-	void attack(int enemyHP,int dura);
-	int strike();
+	void enemies();
+	void strike(int enemyStrike);
+	int hit();
+	int disaster(int dmg);
+
+	void description();
+
 };

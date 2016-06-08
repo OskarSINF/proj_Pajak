@@ -1,7 +1,7 @@
 #include <iostream>
 #include <time.h>
 #include <stdlib.h>
-
+#include <fstream>
 
 #include "Spider.h"
 using namespace std;
@@ -11,90 +11,89 @@ Spider::Spider(string N)
 	name=N;
 	hpMAX=rand()%4+4;
 	hp=hpMAX;
-	ap=5;
-	size=1;
+	ap=rand()%7+2;
+	size=rand()%2+1;
 }
 
-Spider::Spider(string N,int H,int S) 
+Spider::Spider(int H,int S) 
 {
-	name=N;
+	enemies();
+	name=names[ rand()%names.size() ];
 	hpMAX=H;
 	hp=hpMAX;
 	size=S;
 }
 
+Spider::~Spider()
+{
+	names.clear();
+}
+//------
 void Spider::eat(int flySize)
 {
 	if(hp==hpMAX)
-		hpMAX+=flySize;
+	{
+		size+=rand()%flySize+1;
+		hpMAX+=rand()%flySize+1;
+		hp=hpMAX;
+	}
 	else 
 	{
-		hpMAX+=(1-hp/hpMAX)*flySize; 
+		hpMAX+=flySize; 
 		hp+=flySize;
 		if(hp>hpMAX)
 			hp=hpMAX;
 	}
-	ap--;
 }
 
 void Spider::regeneration()
 {
 	if(hp<hpMAX)
 	{
-		hp+=((rand()%5+1)/100)*hpMAX;
+		hp+=rand()%5+1;
 		if(hp>hpMAX)
 			hp=hpMAX;
 	}
-}
-
-
-
-void Spider::buildWeb(int dura)
-{	
-	if(dura==100)
-		dura+=((rand()%10+1)/100)*size;
-	else
-	{
-		dura+=rand()%21;
-		if(dura>100)
-			dura=100;
-	}
-
-	ap--;
-}
-
-void Spider::attack(int enemyHP,int dura)
-{
-	int gamble=rand()%20+1;
-
-	if(gamble==1)
-		cout<<"Atak nie trafia w przeciwnika. ";
-	else if (gamble==20)
-	{
-		cout<<"Trafienie krytyczne!!!(2x). ";
-		enemyHP-=2*strike(); 
-	}
-	else
-		enemyHP-=strike();
-
-	if(rand()%10+1==10);
-	{
-		dura-=rand()%6;
-		cout<<"Podczas ataku pajeczyna zostala uszkodzona o "<<dura<<" !"<<endl;
-	}
-}
-
-int Spider::strike()
-{
-	return rand()%hpMAX*0.3;
 }
 
 int Spider::hpIndicator()
 {
 	return hp/hpMAX*100;
 }
+//------
+void Spider::strike(int enemyStrike)
+{
+	hp-=enemyStrike;
+}
 
+int Spider::hit()
+{
+	return rand()%size+1;
+}
+
+int Spider::disaster(int dmg)
+{
+	hp=-dmg;
+	if(hp<0) hp=0;
+}
+
+
+void Spider::enemies()
+{
+	fstream plik;
+	plik.open("enemies.txt",ios::in);
+	if(plik.good()==false)
+	{
+		cout<<"Error!"<<endl;
+		exit(0);
+	}
+	string nameOfEnemy;
+	while(getline(plik,nameOfEnemy))
+		names.push_back(nameOfEnemy);
+	plik.close();
+}
+//------
 void Spider::description()
 {
-	cout<<name<<" HP: "<<hp<<" / "<<hpMAX<<endl;
+	cout<<name<<" ["<<hp<<"]/["<<size<<"]";
 }

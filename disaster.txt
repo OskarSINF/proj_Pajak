@@ -1,0 +1,4 @@
+00005.10000.00001Umierasz na nagla chorobe.
+00007.10000.00001Na Twoja pajeczyne spada meteoryt. Umierasz.
+00001.-0200.00001Szalony naukowiec wyrzucil radioaktywny pokarm. Teraz jestes Spider manem! (+200 HP).
+00010.00001.00010Napity slodkim miodem pajak przychodzi i buduje nocy Twoja pajeczyne (+10 Web Size).
