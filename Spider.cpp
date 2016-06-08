@@ -39,7 +39,6 @@ void Spider::eat(int flySize)
 	}
 	else 
 	{
-		hpMAX+=flySize; 
 		hp+=flySize;
 		if(hp>hpMAX)
 			hp=hpMAX;
@@ -73,7 +72,7 @@ int Spider::hit()
 
 int Spider::disaster(int dmg)
 {
-	hp=-dmg;
+	hp-=dmg;
 	if(hp<0) hp=0;
 }
 
