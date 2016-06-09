@@ -18,7 +18,7 @@ void Web::setDurability(int d)
 
 void Web::buildWeb(int spiederSize) 
 {	
-	if(durability==100)
+	if(durability>80)
 		size+=rand()%spiederSize+1;
 	else
 	{
@@ -43,4 +43,3 @@ void Web::webCondition()
 	else if (durability<50&& durability>=10) 	cout<<"Zly stan pajeczyny";
 	else 					cout<<"Uwaga! Pajeczyna zaraz sie zerwie! ";
 }
-

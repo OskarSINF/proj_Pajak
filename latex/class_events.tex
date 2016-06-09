@@ -1,0 +1,48 @@
+\hypertarget{class_events}{}\section{Dokumentacja klasy Events}
+\label{class_events}\index{Events@{Events}}
+
+
+Defeinicja klasy Events-\/ nieprzewidziane zdarzenie.  
+
+
+
+
+{\ttfamily \#include $<$Events.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_events_aab651428bab6b09db3564753afb225a6}{Events} ()\hypertarget{class_events_aab651428bab6b09db3564753afb225a6}{}\label{class_events_aab651428bab6b09db3564753afb225a6}
+
+\begin{DoxyCompactList}\small\item\em Konstruktor zdarzenia, kolejne atrybuty przyjmuja odpowienie wartosci okreslone w pliku txt. \end{DoxyCompactList}\item 
+int \hyperlink{class_events_a9ff7caa2de24d1778b9f09feda236001}{get\+Chance} ()\hypertarget{class_events_a9ff7caa2de24d1778b9f09feda236001}{}\label{class_events_a9ff7caa2de24d1778b9f09feda236001}
+
+\begin{DoxyCompactList}\small\item\em Gettery szansy(chance) na zainstenie zdarzenia. \end{DoxyCompactList}\item 
+int \hyperlink{class_events_ac67e48487a984f409783a499920e4d3f}{get\+HP} ()\hypertarget{class_events_ac67e48487a984f409783a499920e4d3f}{}\label{class_events_ac67e48487a984f409783a499920e4d3f}
+
+\begin{DoxyCompactList}\small\item\em Gettery wielkosci wplywajacej na hp obiektu \hyperlink{class_spider}{Spider}. \end{DoxyCompactList}\item 
+int \hyperlink{class_events_ad5bb78b1fe7946627745f5c03b3a48ea}{get\+Size} ()\hypertarget{class_events_ad5bb78b1fe7946627745f5c03b3a48ea}{}\label{class_events_ad5bb78b1fe7946627745f5c03b3a48ea}
+
+\begin{DoxyCompactList}\small\item\em Gettery wielkosci wplywajacej na rozmiar obiektu \hyperlink{class_web}{Web}. \end{DoxyCompactList}\item 
+string \hyperlink{class_events_a2625a228707d115a70cdbe4487b010cb}{get\+Description} ()\hypertarget{class_events_a2625a228707d115a70cdbe4487b010cb}{}\label{class_events_a2625a228707d115a70cdbe4487b010cb}
+
+\begin{DoxyCompactList}\small\item\em Gettery tekstu opisujacego nieprzewidziane zdarzenie. \end{DoxyCompactList}\item 
+void \hyperlink{class_events_a5812546955bf7873e8b4fd6435d8ccce}{file} ()\hypertarget{class_events_a5812546955bf7873e8b4fd6435d8ccce}{}\label{class_events_a5812546955bf7873e8b4fd6435d8ccce}
+
+\begin{DoxyCompactList}\small\item\em Metoda wywolywana w konstruktorze. Pobiera dane z pliku txt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Defeinicja klasy Events-\/ nieprzewidziane zdarzenie. 
+
+Klasa odpowiedzialna za tworzenie obietu, którego kolejne atrybuty wplywaja na glownego bohater symulacji.~\newline
+ Wszystkie atrybuty czytane sa pliku txt. Sa to\+:~\newline
+-\/description -\/ opis zdarzenia,~\newline
+-\/chance -\/ szansa na zaistnienie zdarzenia,~\newline
+-\/hp -\/ wplyw zdarzenia na hp obiektu \hyperlink{class_spider}{Spider},~\newline
+-\/size -\/ wplyw zdarzenia na rozmiar obiekt \hyperlink{class_web}{Web}. 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Events.\+h\item 
+Events.\+cpp\end{DoxyCompactItemize}

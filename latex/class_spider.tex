@@ -1,0 +1,145 @@
+\hypertarget{class_spider}{}\section{Dokumentacja klasy Spider}
+\label{class_spider}\index{Spider@{Spider}}
+
+
+Defeinicja klasy Spider-\/ Pajak.  
+
+
+
+
+{\ttfamily \#include $<$Spider.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_spider_a75fc5ed6dd180fc2d33d2dc0f86f3e97}{Spider} (string N)
+\begin{DoxyCompactList}\small\item\em Konstruktor glownego bohatera. \end{DoxyCompactList}\item 
+\hyperlink{class_spider_a09a7902912619265effef86687c4536b}{Spider} (int H, int S)
+\begin{DoxyCompactList}\small\item\em Konstruktor wrogow. \end{DoxyCompactList}\item 
+\hyperlink{class_spider_a847823793e44603b84396dfcf3ebce40}{$\sim$\+Spider} ()\hypertarget{class_spider_a847823793e44603b84396dfcf3ebce40}{}\label{class_spider_a847823793e44603b84396dfcf3ebce40}
+
+\begin{DoxyCompactList}\small\item\em Destruktor czyszczacy wektor imion jakie moze przyjac przeciwnik. \end{DoxyCompactList}\item 
+int \hyperlink{class_spider_a32edac528e691b9e2e3ee78e8db95863}{get\+HP} ()\hypertarget{class_spider_a32edac528e691b9e2e3ee78e8db95863}{}\label{class_spider_a32edac528e691b9e2e3ee78e8db95863}
+
+\begin{DoxyCompactList}\small\item\em Gettery aktualnego H\+P(hp) pajaka. \end{DoxyCompactList}\item 
+int \hyperlink{class_spider_a3d291eab27d175e00f869579bfd1204c}{get\+Size} ()\hypertarget{class_spider_a3d291eab27d175e00f869579bfd1204c}{}\label{class_spider_a3d291eab27d175e00f869579bfd1204c}
+
+\begin{DoxyCompactList}\small\item\em Gettery aktualnego rozmiaru(size) pajaka. \end{DoxyCompactList}\item 
+string \hyperlink{class_spider_a472846b010cff9f25626e7cb08dd6b8e}{get\+Name} ()\hypertarget{class_spider_a472846b010cff9f25626e7cb08dd6b8e}{}\label{class_spider_a472846b010cff9f25626e7cb08dd6b8e}
+
+\begin{DoxyCompactList}\small\item\em Gettery Imienia(name) obiektu. \end{DoxyCompactList}\item 
+int \hyperlink{class_spider_a17b94ee77b7eccefa1a5e81725ed5ae6}{get\+AP} ()\hypertarget{class_spider_a17b94ee77b7eccefa1a5e81725ed5ae6}{}\label{class_spider_a17b94ee77b7eccefa1a5e81725ed5ae6}
+
+\begin{DoxyCompactList}\small\item\em Gettery ilosci punktow akcji(ap) obiektu. \end{DoxyCompactList}\item 
+void \hyperlink{class_spider_ae15b05f08d3557a259cd742885ea26ce}{eat} (int fly\+Size)
+\begin{DoxyCompactList}\small\item\em Metoda zwiekszajaca H\+P/hp\+M\+AX pajaka oraz jego rozmiar. \end{DoxyCompactList}\item 
+void \hyperlink{class_spider_ab72a2aaac5df07077dff3ecc7ca34326}{regeneration} ()\hypertarget{class_spider_ab72a2aaac5df07077dff3ecc7ca34326}{}\label{class_spider_ab72a2aaac5df07077dff3ecc7ca34326}
+
+\begin{DoxyCompactList}\small\item\em Regeneracja HP pajaka. \end{DoxyCompactList}\item 
+int \hyperlink{class_spider_adbf0fe184a1eb643b694c15666bca832}{hp\+Indicator} ()\hypertarget{class_spider_adbf0fe184a1eb643b694c15666bca832}{}\label{class_spider_adbf0fe184a1eb643b694c15666bca832}
+
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca procentowa ilosc HP. \end{DoxyCompactList}\item 
+void \hyperlink{class_spider_ade36f95469cbaa376caa91b035c4016b}{enemies} ()\hypertarget{class_spider_ade36f95469cbaa376caa91b035c4016b}{}\label{class_spider_ade36f95469cbaa376caa91b035c4016b}
+
+\begin{DoxyCompactList}\small\item\em Metoda wywolywana w konstruktorze. Pobiera imiona z pliku txt. \end{DoxyCompactList}\item 
+void \hyperlink{class_spider_a898f035a96dd91d148f7db34dbad5603}{strike} (int enemy\+Strike)
+\begin{DoxyCompactList}\small\item\em Metoda symuluje orzymywanie obrazen. \end{DoxyCompactList}\item 
+int \hyperlink{class_spider_a227aee02949293d7732045c13c440f3c}{hit} ()\hypertarget{class_spider_a227aee02949293d7732045c13c440f3c}{}\label{class_spider_a227aee02949293d7732045c13c440f3c}
+
+\begin{DoxyCompactList}\small\item\em Metoda okreslajaca sile uderzenia na podstawie rozmiaru pajaka. \end{DoxyCompactList}\item 
+void \hyperlink{class_spider_a528ee5426258ae04bd81498373524f2d}{disaster} (int dmg)\hypertarget{class_spider_a528ee5426258ae04bd81498373524f2d}{}\label{class_spider_a528ee5426258ae04bd81498373524f2d}
+
+\begin{DoxyCompactList}\small\item\em Metoda okresla wplyw zdarzen nieprzeiwdzianych na obiekt. \end{DoxyCompactList}\item 
+void \hyperlink{class_spider_a8ac56d49b3fc398424c978c0f45f778c}{description} ()\hypertarget{class_spider_a8ac56d49b3fc398424c978c0f45f778c}{}\label{class_spider_a8ac56d49b3fc398424c978c0f45f778c}
+
+\begin{DoxyCompactList}\small\item\em Metoda wyslwitlajaca ważniejsze atrybuty obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Defeinicja klasy Spider-\/ Pajak. 
+
+Klasa odpowiedzialna za tworzenie obietu, ktorego przedstawicielem jest glowny bohater symulacji oraz jego przeciwnicy. ~\newline
+ Klasa posiada atrybuty\+:~\newline
+-\/name -\/ imie pajaka,~\newline
+-\/\+HP -\/ aktualne pkt zycia~\newline
+-\/hp\+M\+AX -\/ maksymalne hp jakie moze przyjac pajak,~\newline
+-\/size -\/ rozmiar pajaka,~\newline
+-\/ap -\/ punkty akcji do wykorzystania w czasie jednej tury. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\index{Spider@{Spider}!Spider@{Spider}}
+\index{Spider@{Spider}!Spider@{Spider}}
+\subsubsection[{\texorpdfstring{Spider(string N)}{Spider(string N)}}]{\setlength{\rightskip}{0pt plus 5cm}Spider\+::\+Spider (
+\begin{DoxyParamCaption}
+\item[{string}]{N}
+\end{DoxyParamCaption}
+)}\hypertarget{class_spider_a75fc5ed6dd180fc2d33d2dc0f86f3e97}{}\label{class_spider_a75fc5ed6dd180fc2d33d2dc0f86f3e97}
+
+
+Konstruktor glownego bohatera. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em N} & Jest to imie(name) pajaka. W main.\+cpp przyjmuje pierwszy argument wiersza polecen. \\
+\hline
+\end{DoxyParams}
+\index{Spider@{Spider}!Spider@{Spider}}
+\index{Spider@{Spider}!Spider@{Spider}}
+\subsubsection[{\texorpdfstring{Spider(int H, int S)}{Spider(int H, int S)}}]{\setlength{\rightskip}{0pt plus 5cm}Spider\+::\+Spider (
+\begin{DoxyParamCaption}
+\item[{int}]{H, }
+\item[{int}]{S}
+\end{DoxyParamCaption}
+)}\hypertarget{class_spider_a09a7902912619265effef86687c4536b}{}\label{class_spider_a09a7902912619265effef86687c4536b}
+
+
+Konstruktor wrogow. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em H} & Ilosc HP pajaka. W main.\+cpp przyjmuje losowa wartosc. \\
+\hline
+{\em S} & rozmiar(size) pajaka. W main.\+cpp przyjmuje losowa wartosc. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\index{Spider@{Spider}!eat@{eat}}
+\index{eat@{eat}!Spider@{Spider}}
+\subsubsection[{\texorpdfstring{eat(int fly\+Size)}{eat(int flySize)}}]{\setlength{\rightskip}{0pt plus 5cm}void Spider\+::eat (
+\begin{DoxyParamCaption}
+\item[{int}]{fly\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_spider_ae15b05f08d3557a259cd742885ea26ce}{}\label{class_spider_ae15b05f08d3557a259cd742885ea26ce}
+
+
+Metoda zwiekszajaca H\+P/hp\+M\+AX pajaka oraz jego rozmiar. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em fly\+Size} & Rozmiar muchy zlapanej na pajeczyne. \\
+\hline
+\end{DoxyParams}
+\index{Spider@{Spider}!strike@{strike}}
+\index{strike@{strike}!Spider@{Spider}}
+\subsubsection[{\texorpdfstring{strike(int enemy\+Strike)}{strike(int enemyStrike)}}]{\setlength{\rightskip}{0pt plus 5cm}void Spider\+::strike (
+\begin{DoxyParamCaption}
+\item[{int}]{enemy\+Strike}
+\end{DoxyParamCaption}
+)}\hypertarget{class_spider_a898f035a96dd91d148f7db34dbad5603}{}\label{class_spider_a898f035a96dd91d148f7db34dbad5603}
+
+
+Metoda symuluje orzymywanie obrazen. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em enemy\+Strike} & Sila uderzenia. Wielkosc jaka zostanie odjeta od HP obiektu. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Spider.\+h\item 
+Spider.\+cpp\end{DoxyCompactItemize}

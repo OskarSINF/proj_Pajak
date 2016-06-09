@@ -41,7 +41,7 @@ void Spider::eat(int flySize)
 	{
 		hp+=flySize;
 		if(hp>hpMAX)
-			hp=hpMAX;
+			hpMAX=hp;
 	}
 }
 
@@ -60,23 +60,6 @@ int Spider::hpIndicator()
 	return hp/hpMAX*100;
 }
 //------
-void Spider::strike(int enemyStrike)
-{
-	hp-=enemyStrike;
-}
-
-int Spider::hit()
-{
-	return rand()%size+1;
-}
-
-int Spider::disaster(int dmg)
-{
-	hp-=dmg;
-	if(hp<0) hp=0;
-}
-
-
 void Spider::enemies()
 {
 	fstream plik;
@@ -91,7 +74,24 @@ void Spider::enemies()
 		names.push_back(nameOfEnemy);
 	plik.close();
 }
-//------
+
+void Spider::strike(int enemyStrike)
+{
+	hp-=enemyStrike;
+	if(hp<0) hp=0;
+}
+
+int Spider::hit()
+{
+	return rand()%size+1;
+}
+
+void Spider::disaster(int dmg)
+{
+	hp-=dmg;
+	if(hp<0) hp=0;
+}
+
 void Spider::description()
 {
 	cout<<name<<" ["<<hp<<"]/["<<size<<"]";
