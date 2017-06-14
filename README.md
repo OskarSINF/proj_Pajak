@@ -1,8 +1,8 @@
 
-#Oskar Szubert
-#Symulator Pająka:
+#Oskar Szubert#
+#Symulator Pająka:#
 
-###
+
 - Na początku tworzony jest obiekt pająk, w klasie Pająk- posiadać on będzie atrybuty tj punkty akcji, hp  wielkość , siła ataku, współczynnik regeneracji oraz metody: atak, atak specjalny (trucizna),rage, regeneracja, budowanie sieci, odżywianie, ucieczka.
 
 - Dodatkowo będzie istnieć klasa Pajęczyna o atrybutach: wielkość, wytrzymałość oraz metodzie: zerwanie.
@@ -14,7 +14,7 @@
 - Większy rozmiar tuptusia oznaczać będzie konieczność rozbudowy pajęczyny. Po przekroczeniu pewnej wielkości sieci- stanie się ona widzialna  dla innych pająków. Co zainizjuje walkę o pajęczyne.
 
 
-###Dodatkowe informacje:
+###Dodatkowe informacje:###
 - Symulator będzie turówką, pająk posiada punkty akcji.
 - Decyzja na co zostaną rozdzielone PA, zapadac będzie w oparciu o wartości: zdrowie(mało hp idź zjedz muche), stan pajęczyny(sieć się zarwie- idź ją napraw) - obliczane wg odpowiedniego algorytmu. 
 - Złapane owady, jeżeli nie zostaną wykorzystane w przeciągu 1-3 tur odpadają z pajęczyny i przepadają.
